@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Receitas - ainda sem nome</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo-content">
+            <div class="logo">
+                <h1>Larica's</h1>
+            </div>
+
+            <ul class="menu-geral">
+                <li><a href="#">Newsletter</a></li>
+                <li><a class="cadastro-btn" href="#">Cadastre-se</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="menu-receitas">
+
+            <ul>
+                <a href="#receitas">
+                    <li>Receitas</li>
+                </a>
+                <li class="loja">Loja
+                    <i class="fa fa-cart-shopping"></i>
+                    <span class="contador-produtos-carrinho">8</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <form class="formulario" action="#">
+                    <h3>Cadastre-se</h3>
+                    <div class="campos-de-cadastro">
+                        <div>
+                            <label for="email">
+                                <i class="fa-regular fa-envelope"></i>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="email">
+                        </div>
+
+                        <div>
+                            <label for="senha">
+                                <i class="fa-solid fa-lock"></i>
+                            </label>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                        </div>
+
+                        <div>
+                            <label for="confirmar-senha">
+                                <i class="fa-solid fa-lock"></i>
+                            </label>
+                            <input type="password" name="confirmar-senha" id="confirmar-senha"
+                                placeholder="Confirme sua senha">
+                        </div>
+                        <div class="botoes">
+                            <button class="confirmar">Confirmar</button>
+                            <button class="fechar">Fechar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="pesquisa">
+                <h2>Pesquisar por receitas</h2>
+
+                <div class="inputs-de-pesquisa">
+                    <label for="campo-de-pesquisa">
+                        <input type="text" id="campo-de-pesquisa" placeholder="Procure por uma receita">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="receitas-content" id="receitas">
+            <h2>Melhores receitas</h2>
+            <div class="receitas-container">
+                <div class="receita">
+                    <img src="./src/imagens/pexels-chevanon-photography-1108117.jpg" alt="">
+                    <div class="descricao-receita">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                    </div>
+
+                </div>
+                <div class="receita">
+                    <img src="./src/imagens/pexels-chevanon-photography-1108117.jpg" alt="">
+                    <div class="descricao-receita">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                    </div>
+                </div>
+                <div class="receita">
+                    <img src="./src/imagens/pexels-chevanon-photography-1108117.jpg" alt="">
+                    <div class="descricao-receita">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <p>Sigam a gente nas redes sociais</p>
+        <div class="redes-sociais">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

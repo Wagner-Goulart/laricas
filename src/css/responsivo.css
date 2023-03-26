@@ -1,0 +1,74 @@
+@media (max-width:525px) {
+    .header .logo-content {
+        gap: 30px;
+        font-size: 1.3rem;
+        justify-content: space-around;
+    }
+
+    .header .menu-geral {
+        font-size: 1rem;
+    }
+    .header .menu-receitas ul {
+        gap: 0;
+        padding: 10px;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 35vh;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero .inputs-de-pesquisa {
+        text-align: center;
+    }
+
+    .pesquisa i {
+        font-size: 2rem;
+    }
+
+    .pesquisa input {
+        width: calc(100% - 30px);
+        height: 40px;
+        padding: 10px 5px;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .pesquisa input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .receitas-content h2 {
+        font-size: 2rem;
+    }
+
+    .receitas-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+
+    .receita {
+        width:200px
+    }
+
+    .receita .descricao-receita {
+        font-size: 1rem;
+    }
+
+    .receita .descricao-receita i {
+        font-size: 2rem;
+    }
+    .campos-de-cadastro label i {
+        display: none;
+    }
+    
+}  

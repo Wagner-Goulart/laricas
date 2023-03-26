@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap');
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: rgb(19, 18, 18)
+}
+
+.header {
+    font-size: 1.7rem;
+    font-weight: 700;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.header hr {
+    border-width: 0;
+    height: 1px;
+    border-top-width: 1px;
+}
+
+.header .logo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px
+    
+}
+
+.header .logo {
+    padding: 0 15px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.5rem;
+}
+
+.header .logo-content .menu-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.header .logo-content .menu-geral li a:hover {
+    text-decoration: underline;
+    color: #F6C445;
+}
+
+.header .menu-receitas ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px
+}
+
+.header .menu-receitas ul li {
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.header .menu-receitas ul li:hover {
+    background-color:#F6C445;
+    color: #000;
+}
+
+.loja {
+    position: relative;
+}
+
+.header .menu-receitas .loja:hover {
+    transform: scale(1.1);
+}
+
+.loja i {
+    /* color: #9AC1F0; */
+    font-size: 2.4rem;
+}
+
+.loja .contador-produtos-carrinho {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-color: #e94c0eef;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    border-radius: 50%;
+    right: 5px;
+    bottom: 25px;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+/*HERO*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url(../imagens/pexels-angele-j-128402.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    /* background-color: rgba(0, 0, 0, 0.363); */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(61deg, rgba(0,0,0,0.7259278711484594) 2%, rgba(0,0,0,0.7063200280112045) 54%, rgba(0,0,0,0.2553396358543417) 96%);
+}
+
+.pesquisa {
+    z-index: 2;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.pesquisa h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color:#fff;
+    opacity: 0.8;
+}
+
+.pesquisa input {
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 20px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pesquisa input::placeholder {
+    font-weight: 700;
+    padding: 15px 5px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.pesquisa input:focus-within {
+    opacity: 1;
+}
+
+.pesquisa i {
+    font-size: 3rem;
+    transform: translateY(4px);
+    margin-left: 5px;
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.pesquisa i:hover {
+    transform: scale(1.1);
+}
+
+/*RECEITAS-CONTENT*/
+
+.receitas-content h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.receitas-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.receita {
+   width: 300px;
+   position: relative;
+   margin-top: 15px;
+   border-radius: 10px;
+   box-shadow: 1px 1px 1px #fff, 1px 1px 10px #fff;
+   transition: 0.2s;
+}
+
+.receita:hover {
+    border:  3px solid #fff;
+}
+
+.receita img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.receita .descricao-receita {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    border-bottom-left-radius: 10px;
+    padding: 10px 15px;
+}
+
+.receita .descricao-receita i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 25px;
+   
+}
+
+/* FOOTER*/
+
+.footer {
+    /* background-color: royalblue; */
+    text-align: center;
+    margin-top: 15px;
+    padding: 40px 10px;
+}
+
+.footer p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight:400;
+}
+
+.footer i {
+    margin-top: 15px;
+    font-size: 3rem;
+    margin-right: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.footer a:hover i {
+    color: #F6C445;
+    transform: scale(1.2);
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.205);
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    transition: .3s ease;
+    
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    background-color: #9ac1f0;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.822);
+    padding: 1.5rem;
+    text-align: center;
+    opacity: 1;
+    max-width: 80%;
+    position: absolute;
+}
+
+.formulario h3 {
+    font-size: 4rem;
+}
+
+.formulario input {
+    height: 30px;
+    width: 300px;
+    min-width: 80%;
+}
+
+.formulario input::placeholder {
+    padding: 3px 5px;
+    font-weight: 700;
+}
+
+.formulario h3,
+.formulario div {
+    margin: 15px;
+}
+
+.formulario .botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .botoes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(114, 112, 112);
+    color: white;
+    opacity: 0.8;
+}
+
+.formulario .botoes button:hover {
+    opacity: 1;
+}
+
+.formulario .botoes .confirmar {
+    background-color: #749e3d;
+}
+
+.modal.hide {
+    opacity: 0;
+    z-index: -10;
+}
+
